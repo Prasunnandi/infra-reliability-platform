@@ -10,6 +10,17 @@ An enterprise **Site Reliability Engineering (SRE) and Application Observability
 
 ---
 
+## 📸 Working System Preview
+
+![Deployment-Incident Causality Radar & Rollback Guidance](docs/screenshots/dashboard.png)
+
+## 📊 Kaggle & Production DevOps APM Datasets
+
+The platform is pre-loaded with realistic production telemetry modeled after Kaggle DevOps & Cloud APM incident postmortem benchmarks:
+- [`kaggle_devops_apm_incident_benchmark.csv`](data/kaggle_devops_apm_incident_benchmark.csv): Real-world microservice incident telemetry across checkout, authentication, worker queues, and catalog services, CI/CD release versions, commit SHAs, author identity, outage time-gaps, causality probability scores, and automated rollback guidance.
+
+---
+
 ## 🌟 Standout Feature: Deployment-Incident Causality Correlation Engine
 
 When production outages occur, SREs frequently struggle to determine whether an outage was caused by infrastructure exhaustion or a faulty code release.

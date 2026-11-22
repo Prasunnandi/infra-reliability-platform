@@ -1,0 +1,5 @@
+incident_id,service,incident_title,severity,triggered_timestamp,suspect_deploy_id,suspect_version,commit_sha,deployer,minutes_to_outage,causality_score_pct,p95_latency_ms,error_rate_pct,rollback_target_version,mitigation_status
+INC-809,checkout-service,High P95 Latency & Spike in 502 Bad Gateway Errors,P1_CRITICAL,2026-11-22T15:49:00Z,DEP-108,v2.5.0-rc1,8a1c90e,alex.kumar@eng.internal,4,96.0%,840,12.4%,v2.4.2,ROLLBACK_EXECUTED_HEALTHY
+INC-808,async-workers,Worker Node 02 CPU Saturation & Memory Thrashing,P2_MAJOR,2026-11-22T15:52:00Z,DEP-108,v2.5.0-rc1,8a1c90e,alex.kumar@eng.internal,7,88.5%,420,4.8%,v2.4.2,INVESTIGATING
+INC-807,auth-service,JWT Cryptographic Key Verification Timeout Spike,P2_MAJOR,2026-11-21T18:35:00Z,DEP-106,v3.1.2,4c9d18e,david.ross@eng.internal,5,92.0%,310,2.1%,v3.1.1,RESOLVED_CANARY_PATCH
+INC-806,catalog-service,Redis Read-Through Cache Connection Pool Exhaustion,P3_MEDIUM,2026-11-22T12:18:00Z,DEP-107,v1.14.0,7b4f21a,maya.lin@eng.internal,8,84.0%,190,0.8%,v1.13.9,AUTO_HEALED_SCALE_UP
